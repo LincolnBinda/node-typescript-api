@@ -12,6 +12,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "style:check": "prettier --check src/**/*.ts test/**/*.ts",
     "style:fix": "prettier --write src/**/*.ts test/**/*.ts",
+    "test:unit": "jest",
     "test:functional": "jest --projects ./test --runInBand"
   },
   "repository": "git+https://github.com/LincolnBinda/node-typescript-api.git",
@@ -27,6 +28,7 @@
   },
   "homepage": "https://github.com/LincolnBinda/node-typescript-api#readme",
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.1",
     "@types/module-alias": "^2.0.1",
@@ -44,6 +46,7 @@
   },
   "dependencies": {
     "@overnightjs/core": "^1.7.6",
+    "axios": "^0.26.1",
     "body-parser": "^1.20.0",
     "express": "^4.17.3",
     "module-alias": "^2.2.2"
